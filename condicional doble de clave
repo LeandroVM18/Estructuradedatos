@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string password;
+   cout<<"Ingrese la clave secreta"<<endl;
+   cin>>password;
+   if(password=="ABCDE"){
+       cout<<"Clave correcta"<<endl;
+   }
+   else{
+       cout<<"Clave incorrecta"<<endl;
+   }
+   return 0;
+}
