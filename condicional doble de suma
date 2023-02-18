@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int suma;
+   cout<<"cuanto es 48 + 50"<<endl;
+   cin>>suma;
+   if(suma==98){
+       cout<<"Respuesta correcta"<<endl;
+   }
+   else{
+       cout<<"Respuesta incorrecta"<<endl;
+   }
+   return 0;
+}
