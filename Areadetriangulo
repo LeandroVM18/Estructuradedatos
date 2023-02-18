@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int b,h;
+    float a;
+    cout<<"Ingrese la base"<<endl;
+    cin>>b;
+    cout<<"Ingrese la altura"<<endl;
+    cin>>h;
+    a=(b*h)/2;
+    cout<<"Su area de su triangulo es: "<<a<<endl;
+    return 0;
+}
