@@ -1,0 +1,71 @@
+#include <iostream>
+#include "stdlib.h"
+
+using namespace std;
+
+void cubo();
+void promedio();
+bool edad();
+
+
+int main()
+{
+  int opcion;
+  do{
+      cout<<"****** MENU ******"<<endl;
+      cout<<"--------------------"<<endl<<endl;
+      cout<<"1.Calcular el volumen del cubo"<<endl;
+      cout<<"2.Calcular el promedio de n notas"<<endl;
+      cout<<"3.Calcular si estas habilitado para votar"<<endl<<endl;
+      cout<<"Elija una opcion"<<endl;
+      cin>>opcion;
+      switch(opcion)
+      {
+          case 1: cubo();
+          break;
+          case 2: promedio();
+          break;
+          case 3: if(edad()>=18)
+            cout<<"Usted esta habilitado"<<endl;
+            else
+            cout<<"Usted no esta habilitado"<<endl;
+            break;
+          default: cout<<"Opcion no valida"<<endl;
+      }
+      system("pause");
+      system("cls");
+  }while(opcion!=0);
+  return 0;
+}
+
+void cubo()
+{
+    float a,vol;
+    cout<<"Ingrese un lado del cubo"<<endl;
+    cin>>a;
+    vol=a*a*a;
+    cout<<"El volumen del cubo es: "<<vol;
+}
+
+void promedio()
+{
+    int n; float suma=0,nota,promedio;
+    cout<<"Ingrese las cantidades de notas"<<endl;
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        cout<<"Ingrese la nota"<<" "<<i<<endl;
+        cin>>nota;
+        suma=suma+nota;
+    }
+    promedio=suma/n;
+    cout<<promedio;
+}
+
+bool edad()
+{
+    int e;
+    cout<<"Ingrese su edad:  "<<endl;
+    cin>>e;
+    cout<<"Verificando si usted esta habilitado para votar"<<endl;
+    return e;
+}
