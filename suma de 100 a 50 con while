@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int total=0,i;
+   cout<<"suma de los numeros pares de 100 a 50"<<endl;
+   i=100;
+   while(i>=50){
+       total=total+i;
+       i-=2;
+   }
+   cout<<"Su suma total es: "<<total<<endl;
+   return 0;
+}
