@@ -1,0 +1,61 @@
+#include <iostream>
+#include "conio.h"
+
+#define FIL 10
+#define COL 10
+
+using namespace std;
+
+void MatrizTrasp(double matriz1[FIL][COL], double matriz2[FIL][COL]);
+void mostrarMatriz(double matriz1[FIL][COL], int filas, int columnas);
+void cargarMatriz(double matriz1[FIL][COL], int filas, int columnas);
+
+int filas1, columnas1;
+
+int main(){
+	
+	double matriz1[FIL][COL], matriz2[FIL][COL];
+	
+	cout << "filas: "; cin >> filas1;
+	cout << "columnas: "; cin >> columnas1;
+
+	cargarMatriz(matriz1, filas1, columnas1);
+	MatrizTrasp(matriz1, matriz2);
+	mostrarMatriz(matriz2, filas1, columnas1);
+
+	return 0;
+}
+
+void MatrizTrasp(double matriz1[FIL][COL], double matriz2[FIL][COL]) {
+
+	for(int i=0; i<filas1; i++)
+		for (int j = 0; j < columnas1; j++) {
+
+			matriz2[i][j] = matriz1[j][i];
+		}
+
+}
+
+void mostrarMatriz(double matriz1[FIL][COL], int filas, int columnas) {
+
+	for (int i = 0; i < filas; i++) {
+		for (int j = 0; j < columnas; j++) {
+
+			cout << "" << matriz1[i][j] << " ";
+		}
+		cout << " " << endl;
+	}
+}
+
+void cargarMatriz(double matriz1[FIL][COL], int filas, int columnas) {
+	
+
+	for (int i = 0; i < filas; i++) {
+		for (int j = 0; j < columnas; j++) {
+
+			cout << "[" << i << "][" << j << "]: ";
+			cin >> matriz1[i][j];
+		}
+	}
+
+}
