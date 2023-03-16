@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+void fun(int n){
+    while(n>0){
+    cout<<n;    
+    n--;
+    }
+}
+
+int main()
+{
+    int n;
+    cout<<"Ingrese un valor para su resta sucesiva"<<endl;
+    cin>>n;
+    fun(n);
+
+    return 0;
+}
