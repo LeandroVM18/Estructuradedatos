@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int suma(int a,int b){
+    b=b+10;
+    return (a+b);
+}
+
+int main()
+{
+  int a=10,b=20;
+  suma(a,b);
+  cout<<a<<endl;
+  cout<<b<<endl;
+}
