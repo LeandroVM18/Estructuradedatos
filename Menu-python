@@ -1,0 +1,46 @@
+while True:
+        print("1.-Para horas de trabajo")
+        print("2.-Calcular su IMC")
+        print("3.-Para coeficiente y resto")
+        print("4.-Para saber si es mayor de edad")
+        print("0.-para salir")
+        option=int(input("Ingrese una opcion: "))
+        if option==1:
+            print ("cual es tu nombre")   #Determinar la paga
+            nom=input()
+            print(f"bienvenido {nom}")
+            horas=float(input("horas de trabajo: "))
+            coste=float(input("cobro por hora: "))
+            paga=horas*coste
+            print(nom," Tu paga es: ",paga)
+        else:
+            if option==2:
+                    print("Ingrese su nombre")   #Calcular la IMC de una persona
+                    nom=input()
+                    print("Ingrese su peso")
+                    peso=int(input())
+                    print("Ingrese su altura")
+                    alt=float(input())
+                    imc=float(peso/(alt*alt))
+                    print("Su IMC es: ",imc)
+            else:
+                    if option==3:
+                            print("Introduzca 2 valores enteros")   #Sacar coeficiente y resto de division
+                            a=int(input())
+                            b=int(input())
+                            div=int(a/b)
+                            rest=int(a-(div*b))
+                            print("Su coeficiente es: ",div)
+                            print("Su resto es: ",rest)
+                    else:
+                            if option==4:
+                                    print("Introduzca su edad")   #Determinar si es mayor o menor
+                                    edad=int(input())
+                                    if edad<18:
+                                        print('menor')
+                                    else:
+                                        print("mayor")
+                            else:
+                                    if option==0:
+                                            print("Decidiste salir")   #Para salir del programa
+                                            break
