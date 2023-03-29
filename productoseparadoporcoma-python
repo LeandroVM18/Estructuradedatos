@@ -1,0 +1,3 @@
+print("Ingrese los productos que llevara")
+productos=input()
+print(productos.replace(',', '\n'))
