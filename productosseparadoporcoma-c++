@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string productos;
+    int i=0;
+    cout<<"Ingrese los productos que introdujo"<<endl;
+    getline(cin,productos);
+    cout<<"los productos son: "<<endl<<endl;
+    while(productos.at(i)!=' '){
+        if(productos.at(i)==','){
+            cout<<endl;
+        }
+        else{
+            cout<<productos.at(i);
+        }
+        i++;
+    }
+    return 0;
+}
