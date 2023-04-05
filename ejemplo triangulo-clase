@@ -1,0 +1,80 @@
+#include "triangulo.h"
+//Implementacion de los metodos de la clase
+//Declaracion del constructor
+Triangulo::Triangulo(float b, float h)
+{
+	base = b;
+	altura = h;
+}
+Triangulo::Triangulo()
+{
+	base = 4;
+	altura = 3;
+}
+//Declaracion del destructor
+Triangulo::~Triangulo(void)
+{
+}
+//Declaración del metodo - funcion
+float Triangulo::calculararea(float b, float h)
+{
+	area = (b * h) / 2;
+	return area;
+
+}
+float Triangulo::getbase()
+{
+	return base;
+}
+void Triangulo::setbase(float b)
+{
+	base = b;
+}
+
+
+#pragma once
+class Triangulo
+{
+	//atributos
+	// Atributos - Variables
+private:
+	float base;
+	float altura;
+	float area;
+	//Metodos - Funciones
+public:
+	Triangulo(float a, float b);
+	Triangulo(void); //Constructor - asigna memoria 
+	~Triangulo(void); //Deestructor - libera memoria
+	//Prototipos
+	float calculararea(float b, float h);
+	float getbase();
+	void setbase(float b);
+};
+
+
+
+// Ejemplotriangulo.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+#include "triangulo.h"
+using namespace std;
+
+
+int main()
+{
+	Triangulo triangulo1;
+	float x, y;
+	cout << "Ingrese los datos del triangulo: ";
+	cin >> x;
+	cout << "Ingrese los datos de la altura: ";
+	cin >> y;
+	Triangulo triangulo2(x,y);
+	cout << "El area es: " << triangulo1.calculararea(x, y) << endl;
+	cout << "El area es: " << triangulo2.calculararea(x, y) << endl; //utiliza el metodo sin argumentos
+	cout << "La base en el triangulo 1 es: " << triangulo1.getbase() << endl;
+	cout << "La base en el triangulo 2 es: " << triangulo2.getbase()<<endl;
+	triangulo1.setbase(x);
+	cout << "La base en el triangulo 1 es: " << triangulo1.getbase()<<endl;
+}
