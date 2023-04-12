@@ -1,0 +1,9 @@
+nums=[]
+lista=nums
+print("Ingrese los numeros ganadores de la loteria")
+for i in range(7):
+        x=int(input())
+        nums.append(x)
+lista.sort()
+print("La lista de menor a mayor es:")
+print(lista)
