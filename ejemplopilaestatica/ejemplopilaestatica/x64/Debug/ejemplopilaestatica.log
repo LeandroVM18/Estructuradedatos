@@ -1,0 +1,16 @@
+﻿  ejemplopilaestatica.cpp
+  Pila.cpp
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\Pila.cpp(51,18): error C2248: 'TipoDato::id': no se puede obtener acceso al miembro private miembro declarado en la clase 'TipoDato'
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\TipoDato.h(9,6): message : vea la declaración de 'TipoDato::id'
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\TipoDato.h(6,7): message : vea la declaración de 'TipoDato'
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\Pila.cpp(52,18): error C2248: 'TipoDato::descripcion': no se puede obtener acceso al miembro private miembro declarado en la clase 'TipoDato'
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\TipoDato.h(10,9): message : vea la declaración de 'TipoDato::descripcion'
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\TipoDato.h(6,7): message : vea la declaración de 'TipoDato'
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\Pila.cpp(69,21): error C2248: 'TipoDato::id': no se puede obtener acceso al miembro private miembro declarado en la clase 'TipoDato'
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\TipoDato.h(9,6): message : vea la declaración de 'TipoDato::id'
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\TipoDato.h(6,7): message : vea la declaración de 'TipoDato'
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\Pila.cpp(70,21): error C2248: 'TipoDato::descripcion': no se puede obtener acceso al miembro private miembro declarado en la clase 'TipoDato'
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\TipoDato.h(10,9): message : vea la declaración de 'TipoDato::descripcion'
+C:\Users\UpsaLab\source\repos\ejemplopilaestatica\ejemplopilaestatica\TipoDato.h(6,7): message : vea la declaración de 'TipoDato'
+  TipoDato.cpp
+  Generando código...
